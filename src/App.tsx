@@ -1,10 +1,9 @@
 import React from 'react';
-
 import MainRoutes from './Routes'
 import Sidebar from './components/Sidebar'
-
-
+import './setting.css'
 import './styles.css'
+import './login.css'
 
 function App() {
   return (
@@ -15,6 +14,7 @@ function App() {
 
      {/** Inner container */}
     <MainRoutes/>
+    
     </div>
   );
 }

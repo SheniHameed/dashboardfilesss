@@ -47,6 +47,8 @@ const ProtectedRoutes = (props: ProtectedRouteType) => {
 		)
 	} else {
 		return auth ? <Outlet /> : <Navigate to="/login" />
+
+		
 	}
 }
 

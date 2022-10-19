@@ -1,4 +1,5 @@
 import React from 'react';
+//import './styles.css'
 
 const  Dashboard=() =>{
   return <>
@@ -10,10 +11,10 @@ const  Dashboard=() =>{
       <button className="dropbtn"><i className="fa fa-reorder"></i>     
       </button>
       <div className="dropdown-content">
-        <a><i font-size="24px" className="fa fa-tachometer"></i>Dashboard Module</a>
-          <a><i font-size="24px" className="fa">&#xf0e3;</i>Repair Module</a>
-        <a><i font-size="24px" className="fa">&#xf044;</i>Componay Module</a>
-        <a><i font-size="24px" className="fa">&#xf0c0;</i>UserModule</a>
+        <a href="/dashbonard"><i font-size="24px" className="fa fa-tachometer"></i>Dashboard Module</a>        
+          <a href='/settings'><i font-size="24px" className="fa">&#xf0e3;</i>Repair Module</a>
+        <a href='/tabs'><i font-size="24px" className="fa">&#xf044;</i>Componay Module</a>
+        <a href='/tabs'><i font-size="24px" className="fa">&#xf0c0;</i>UserModule</a>
       </div>     
     </div>
   </div>
@@ -27,21 +28,16 @@ const  Dashboard=() =>{
       </div>
      <div className="tprogress">          
         <h1>6<br></br>TOTAL USERS<i  className="fa fa-users"></i><br></br> <br></br>Monthly Progress<i className="fa fa-bar-chart"></i></h1></div>
-      <div className='trepairs'>
-            
-       <h1> 117 <br></br><i  className="fa fa-cubes" ></i>TOTAL REPAIRS <br></br><br></br> Monthly Progress<i className="fa fa-bar-chart"></i></h1>
+      <div className='trepairs'>            
+       <h1> 117 <br></br>TOTAL REPAIRS <i  className="fa fa-cubes" ></i><br></br><br></br> Monthly Progress<i className="fa fa-bar-chart"></i></h1>
       </div>
-       <div className='tPending'>
-       
+       <div className='tPending'>       
          <h1>74<br></br>PENDING REPAIRS<i  className="fa fa-shopping-cart " ></i><br></br><br></br> Monthly Progress<i className="fa fa-bar-chart"></i></h1>
       </div>
-      <div className='tcompelete'>
-        
-        <h1> 24<br></br><i className="fa fa-comments" ></i>COMPLETE REPAIRS<br></br><br></br> Monthly Progress<i className="fa fa-bar-chart"></i></h1>
+      <div className='tcompelete'>        
+        <h1> 24<br></br>COMPLETE REPAIRS<i className="fa fa-comments" ></i><br></br><br></br> Monthly Progress<i className="fa fa-bar-chart"></i></h1>
       </div>
       
-
-
     </></>
   ;
   

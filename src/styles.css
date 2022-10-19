@@ -39,10 +39,7 @@ q:before, q:after {
 	content: '';
 	content: none;
 }
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
+
 
 
 body{
@@ -77,17 +74,7 @@ body{
 .sidebar_active{
     text-decoration: underline!important;
 }
-.tab-nav{
- margin-top:70px;
- margin-bottom:60px;   
-}
-.tab-nav a{    
-    color:#A2A2A2;
-    font-size:20px;
-    font-weight: 500;
-    padding:20px;
-    text-decoration: none;
-}
+
 
 
   
@@ -248,33 +235,21 @@ body{
 .sidebar_active{
     text-decoration: underline!important;
 }
-.tab-nav{
- margin-top:40px;
- margin-bottom:60px;   
-}
-.tab-nav a{    
-    color:#A2A2A2;
-    font-size:20px;
-    font-weight: 500;
-    padding:20px;
-    text-decoration: none;
-}
+
 
 .inner-content{
-    padding-top:1px;
+    padding-top:0px;
     padding-left:40px;
 }
-
-
 
 .tprogress {
   background:#394d6d;
   color: white;
   padding: 2rem;
-  width: 205px;
+  width: 240px;
 }
 .tprogress i{
-  font-size: 18px;
+  font-size: 15px;
 margin-left: 25px;
 }
 .tprogress h1{
@@ -289,31 +264,31 @@ margin-left: 25px;
   background:#394d6d;
   color: white;
   padding: 2rem;
-  width: 205px;
-  margin-left: 290px;
-  margin-top: -136px;
-  height: 70px;
+  width: 240px;
+  margin-left: 280px;
+  margin-top: -135px;
+
+}
+.trepairs i{
+  font-size: 15px;
+margin-left: 25px;
 }
 .trepairs h1{
   font-size: 12px;
   font: 1em sans-serif;
 
 }
-
 .tPending{
 
   background:#394d6d;
   color: white;
   padding: 2rem;
-  width: 205px;
-  margin-left: 330px;
-  margin-top: -156px;
-  height: 68px;
-  margin-left: 857px;
-  margin-top: -130px
+  width: 250px; 
+  margin-top: -133px;
+  margin-left: 570px;
 }
 .tPending i{
-  font-size: 30px;
+  font-size: 15px;
 margin-left: 25px;
 }
 .tPending h1{
@@ -327,19 +302,18 @@ margin-left: 25px;
   background:#394d6d;
   color: white;
   padding: 2rem;
-  width: 205px;
-  margin-left: 330px;
-  
-  height: 70px;
-  margin-left: 572px;
-  margin-top: -130px;
+  width: 270px;
+  margin-left: 870px;  
+  margin-top: -137px;
+}.tcompelete i{
+  font-size: 15px;
+margin-left: 25px;
 }
 .tcompelete h1{
   font-size: 12px;
   font: 1em sans-serif;
 
 }
-
 .dashboard h1{
 
     color:#e8f0f5;
@@ -459,3 +433,5 @@ h2{
     background-color:#365262;
     color:white;
 }
+
+
