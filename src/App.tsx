@@ -8,9 +8,7 @@ import './login.css'
 function App() {
   return (
     <div className="app">
-     
-     {/** Sidebar */}
-     <Sidebar/>
+
 
      {/** Inner container */}
     <MainRoutes/>
