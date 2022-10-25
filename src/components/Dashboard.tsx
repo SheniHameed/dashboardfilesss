@@ -5,25 +5,26 @@ const  Dashboard=() =>{
   return <>
  
   <><div className="navbar">
-    <h1> Dashboard</h1>   
+    <h1> Dashboard</h1>    </div>
     <div className="dropdown">
     <button className="tst">Test <i className="fa fa-users"></i></button>
+  
       <button className="dropbtn"><i className="fa fa-reorder"></i>     
       </button>
       <div className="dropdown-content">
-        <a href="/dashbonard"><i font-size="24px" className="fa fa-tachometer"></i>Dashboard Module</a>        
+        <a href="/Dashbonard"><i font-size="24px" className="fa fa-tachometer"></i>Dashboard Module</a>        
           <a href='/settings'><i font-size="24px" className="fa">&#xf0e3;</i>Repair Module</a>
-        <a href='/tabs'><i font-size="24px" className="fa">&#xf044;</i>Componay Module</a>
-        <a href='/tabs'><i font-size="24px" className="fa">&#xf0c0;</i>UserModule</a>
-      </div>     
-    </div>
-  </div>
+        <a href='/Companymodule'><i font-size="24px" className="fa">&#xf044;</i>Componay Module</a>
+        <a href='/userModule'><i font-size="24px" className="fa">&#xf0c0;</i>userModule</a>
+        
+    </div></div>
+ 
   <form className="example" >
   <input type="text" placeholder="Repair ID.." name="search"></input>
   <button type="submit">Search<i className="fa fa-search"></i></button>
 </form>
       <div className='dashboard'>      
-        <h1>Classic Dashboard</h1><br></br>
+        <h1><br></br>Classic Dashboard</h1><br></br>
           <h2>Creativity Crafted Dashboard for your needs</h2>
       </div>
      <div className="tprogress">          

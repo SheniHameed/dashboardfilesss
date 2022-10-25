@@ -2,15 +2,18 @@ import axios from "axios";
 
 const API_URL = "http://localhost:3000/users/api";
 
-class AuthService {
-  login(username: string, Password: string) {
+class AuthCompany {
+ 
+
+  Companymodule(CompanyName: string, address: string, NTNNumber:string) {
     return axios
-      .post(API_URL + "/login", {
-        username,
-        Password
+      .post(API_URL + "/CompanyModlue", {
+        CompanyName,
+        address,
+        NTNNumber,
       })
       .then(response => {
-        console.log("User Login is successful")
+        console.log("client added successful")
         if (response.data.accessToken) {
           localStorage.setItem("user", JSON.stringify(response.data));
         }
@@ -18,13 +21,7 @@ class AuthService {
         return response.data;
       });
   }
-
-  
-  logout() {
-    localStorage.removeItem("user");
-  }
-
-  
+ 
 }
 
-export default new AuthService();
+export default new AuthCompany();

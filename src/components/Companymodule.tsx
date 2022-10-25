@@ -2,28 +2,30 @@ import { Component } from "react";
 
 import { Formik, Field, Form, ErrorMessage } from "formik";
 import * as Yup from "yup";
-import AuthService from "./auth.service";
+import AuthCompany from "./auth.company";
 
 type Props = {};
 
 type State = {
   redirect: string | null,
-  Email: string,
-  Password: string,
+  CompanyName: string,
+  address: string,
+  NTNNumber: string,
   loading: boolean,
   message: string
 };
 
-export default class Login extends Component<Props, State> {
+export default class Companymodule extends Component<Props, State> {
   
   constructor(props: Props) {
     super(props);
-    this.handleLogin = this.handleLogin.bind(this);
+    this.handleCompanymodule = this.handleCompanymodule.bind(this);
 
     this.state = {
       redirect: null,
-      Email: "",
-      Password: "",
+      CompanyName: "",
+      address: "",
+      NTNNumber: "",
       loading: false,
       message: ""
     };
@@ -43,21 +45,23 @@ export default class Login extends Component<Props, State> {
 
   validationSchema() {
     return Yup.object().shape({
-      Email: Yup.string().required("This field is required!"),
-      Password: Yup.string().required("This field is required!"),
+      CompanyName: Yup.string().required("This field is required!"),
+      address: Yup.string().required("This field is required!"),
+      NTNNumber: Yup.string().required("This field is required!"),
     });
   }
 
-  handleLogin(formValue: { Email: string; Password: string }) {
-    const { Email, Password } = formValue;
+  handleCompanymodule(formValue: { CompanyName: string;  address: string; NTNNumber: string }) {
+    const { CompanyName, address,NTNNumber } = formValue;
 
     this.setState({
       message: "",
       loading: true
     });
+   
+  
 
-
-    AuthService.login(Email, Password).then(
+    AuthCompany.Companymodule(CompanyName, address,NTNNumber).then(
       () => {
         // this.setState({
         //   redirect: '/Dashboard'
@@ -87,54 +91,59 @@ export default class Login extends Component<Props, State> {
 
 
     const initialValues = {
-      Email: "",
-      Password: "",
+      CompanyName: "",
+      address: "",
+      NTNNumber:"",
     };
 
-    return (<div className='l-page'>
+    return (<div className='c-page'>
 		<div className="col-md-12">
         <div className="card card-container">
-          <img
-            src="/pics/logo.png"
-            alt="-img"
-            className="profile-img-card"
-          />
+          
       
 
           <Formik
             initialValues={initialValues}
             validationSchema={this.validationSchema}
-            onSubmit={this.handleLogin}
+            onSubmit={this.handleCompanymodule}
           >
             <Form>
-			<h1 className="l-heading">SIGN-IN </h1>
-                        <h2 className="head">Welcome to Mobile Repair System</h2><br></br>
-              <div className="'-group">
-                <label htmlFor="Email">Email</label>
-                <Field name="Email" type="text" className="form-control" />
+			<h1 className="c-heading">Cleint Form </h1>
+                        
+              <div className="c-group">
+                <label htmlFor="Companyname">CompanyName</label>
+                <Field name="CompanyName" type="text" className="form-control" />
                 <ErrorMessage
-                  name="Email"
+                  name="CompanyName"
                   component="div"
                   className="alert alert-danger"
                 />
               </div>
 			  
-              <div className="l-group">
-                <label htmlFor="Password">Password</label>
-                <Field name="Password" type="Password" className="form-control" />
+              <div className="c-group">
+                <label htmlFor="address">address</label>
+                <Field name="address" type="address" className="form-control" />
                 <ErrorMessage
-                  name="Password"
+                  name="address"
                   component="div"
                   className="alert alert-danger"
                 />
               </div>
-			 
-              <div className="l-group">                
+              <div className="c-group">
+                <label htmlFor="NTNNumber">NTNNumber</label>
+                <Field name="NTNNumber" type="NTNNumber" className="form-control" />
+                <ErrorMessage
+                  name="NTNNumber"
+                  component="div"
+                  className="alert alert-danger"
+                />
+              </div>
+              <div className="c-group">                
 			 <button type="submit" className="btn btn-primary btn-block "  >                 
-              Login
+              Save
                 </button>
                 
-                <p className="message">Dont have an account? contact portal administor</p></div>            
+                </div>            
 
               
             </Form>

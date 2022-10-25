@@ -1,277 +1,181 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-
-
-
 body{
-    font-family: 'Rubik', sans-serif;
-    background-color:rgb(8, 14, 53)
+  background-color: rgb(28, 28, 67);
 }
+.navbar {
 
-
-.app{
-    display: flex;
-}
-.sidebar{
-    width:200px;
-    background-color: #365262;
-    color: #EBF8FE;
-    padding-top:120px;
-    padding-left:20px;
-    height:100vh;
-    
-}
-.sidebar__items{
-    display: flex;
-    flex-direction: column;
-
-}
-.sidebar__items a{
-    color: #EBF8FE;
-    font-size:20px;
-    margin-bottom:40px;
-    text-decoration: none;
-}
-.sidebar_active{
-    text-decoration: underline!important;
-}
-
-
-
+  overflow: hidden;
   
-  .navbar {
+  font-family: Arial;
+}
 
-    overflow: hidden;
-    
-    font-family: Arial;
-  }
+
+
+/* Links inside the navbar */
+.navbar h1 {
  
- 
+   font-style:sans-serif;
+ margin-top:-4px ;
+  font-variant-ligatures: normanpml;
+  font-variant-caps: normal;
+  font-variant-numeric: normal;
+  font-variant-east-asian: normal;
+margin-left: 200px;
+  font-stretch: normal;    
+  float: left;
+  font-size: 40px;
+  color: rgb(100, 102, 104);
+  margin-top: 20px;
   
-  /* Links inside the navbar */
-  .navbar h1 {
-   
-     font-style:sans-serif;
-   margin-top:-4px ;
-    font-variant-ligatures: normanpml;
-    font-variant-caps: normal;
-    font-variant-numeric: normal;
-    font-variant-east-asian: normal;
-  margin-left: 20px;
-    font-stretch: normal;    
-    float: left;
-    font-size: 30px;
-    color: rgb(100, 102, 104);
-    
-  }
-  
-  form.example input[type=text] {
-    padding: 10px;
-    font-size: 17px;
-    border: 1px solid grey;
-    float: right;
-    width: 17%;
-    background: #9f9b9b;
-    margin-top: 30px;
-    margin-right:50px ;
- 
-  }
-  
-  /* Style the submit button */
-  form.example button {
-    float: right;
-    width: 8%;
-    padding: 10px;
-    background: #ef1717;
-    color: white;
-    font-size: 17px;
-    border: 1px solid rgb(77, 71, 203);
-    border-left: none; /* Prevent double borders */
-    cursor: pointer;
-    margin-top: 30px;
-  }
-  
-  form.example button:hover {
-    background: #0b7dda;
-  }
-  
-  /* Clear floats */
-  form.example::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-  /* The dropdown container */
-  .dropdown {
-    float: left;
-    overflow: hidden;
-    margin-left: 1000px;
-    margin-top: -40px;
-  }
-  
-  /* Dropdown button */
-  .dropdown .dropbtn {
-    font-size: 16px;
-    border: none;
-    outline: none;
-    color: rgb(26, 152, 194);
-    padding: 14px 16px;
-    background-color: inherit;
-    font-family: inherit; /* Important for vertical align on mobile phones */
-    margin: 0; /* Important for vertical align on mobile phones */
-  }
-  .tst {
-    font-size: 16px;
-    border: none;
-    outline: none;
-    color: rgb(26, 152, 194);
-    padding: 14px 16px;
-    background-color: inherit;
-    font-family: inherit; /* Important for vertical align on mobile phones */
-    margin: 0; /* Important for vertical align on mobile phones */
-  }
-  /* Add a red background color to navbar links on hover */
-  .navbar a:hover, .dropdown:hover .dropbtn {
-    background-color: rgb(136, 232, 245);
-  }
-  
-  /* Dropdown content (hidden by default) */
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #1f1f20;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-    outline: #0b7dda;
-    font-size: 12px;
-  }
-  
-  /* Links inside the dropdown */
-  .dropdown-content a {
-    float: none;
-    color: rgb(127, 124, 124);
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-    font-size: 20px;
-    font-family: sans-serif;
-    background-color: #1f1f20;
-
-  }
-  
-  /* Add a grey background color to dropdown links on hover */
-  .dropdown-content a:hover {
-    background-color: #ddd;
-  }
-  
-  /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-.app{
-    display: flex;
-}
-.sidebar{
-    width:200px;
-    background-color: #1f1f20;
-    color: #EBF8FE;
-    padding-top:200px;
-    padding-left:20px;
-    height:100vh;
-    
-}
-.sidebar__items{
-    display: flex;
-    flex-direction: column;
-
-}
-.sidebar__items a{
-    color: #EBF8FE;
-    font-size:20px;
-    margin-bottom:40px;
-    text-decoration: none;
-}
-.sidebar_active{
-    text-decoration: underline!important;
 }
 
-
-.inner-content{
-    padding-top:0px;
-    padding-left:40px;
+.dropdown {
+  float: left;
+  overflow: hidden;
+  margin-left: 1200px;
+  margin-top: -50px;
 }
 
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: rgb(26, 152, 194);
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+.tst {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: rgb(26, 152, 194);
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: rgb(136, 232, 245);
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #1f1f20;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  outline: #0b7dda;
+  font-size: 12px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: rgb(127, 124, 124);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  font-size: 20px;
+  font-family: sans-serif;
+  background-color: #1f1f20;
+
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+form.example input[type=text] {
+  padding: 7px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: right;
+  width: 14%;
+  background: #9f9b9b;
+  margin-top: 15px;
+  margin-right:130px ;
+
+}
+
+/* Style the submit button */
+form.example button {
+  float: right;
+  width: 8%;
+  padding: 7px;
+  background: #ef1717;
+  color: white;
+  font-size: 17px;
+  border: 1px solid rgb(77, 71, 203);
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+/* Clear floats */
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.dashboard h1{
+
+  color:#e8f0f5;
+  font-size:20px;
+  margin-top: 1px;
+  font-family: Oswald;
+  margin-left: 200px;
+  
+}
+.dashboard h2{
+  
+color:#e8f0f5;
+font-size:15px;
+font-family: Oswald;
+margin-left: 200px;
+}
 .tprogress {
   background:#394d6d;
   color: white;
   padding: 2rem;
-  width: 240px;
+  width: 270px;
+  margin-top: 50px;
+  margin-left: 250px;
 }
 .tprogress i{
   font-size: 15px;
-margin-left: 25px;
+margin-left: 20px;
 }
 .tprogress h1{
   font-size: 12px;
   font: 1em sans-serif;
-
 }
-
-
 .trepairs{
-
   background:#394d6d;
   color: white;
   padding: 2rem;
-  width: 240px;
-  margin-left: 280px;
-  margin-top: -135px;
+  width: 270px;
+  margin-left: 525px;
+  margin-top:-135px;
 
 }
 .trepairs i{
   font-size: 15px;
-margin-left: 25px;
+margin-left: 3px;
 }
 .trepairs h1{
   font-size: 12px;
@@ -284,12 +188,12 @@ margin-left: 25px;
   color: white;
   padding: 2rem;
   width: 250px; 
-  margin-top: -133px;
-  margin-left: 570px;
+  margin-top: -135px;
+  margin-left: 800px;
 }
 .tPending i{
   font-size: 15px;
-margin-left: 25px;
+margin-left: 5px;
 }
 .tPending h1{
   font-size: 12px;
@@ -303,135 +207,16 @@ margin-left: 25px;
   color: white;
   padding: 2rem;
   width: 270px;
-  margin-left: 870px;  
-  margin-top: -137px;
+  margin-left: 1060px;  
+  margin-top: -135px;
 }.tcompelete i{
   font-size: 15px;
-margin-left: 25px;
+margin-left: 2px;
 }
 .tcompelete h1{
   font-size: 12px;
   font: 1em sans-serif;
 
-}
-.dashboard h1{
-
-    color:#e8f0f5;
-    font-size:20px;
-    margin-top: -40px;
-    font-family: Oswald;
-}
-.dashboard h2{
-
-  color:#e8f0f5;
-  font-size:15px;
-  font-family: Oswald;
-}
-.inner-content{
-    padding-top:70px;
-    padding-left:40px;
-}
-
-h1{
-    color:#f3f6f9;
-    font-size:30px;
-    font-weight: 500;
-}
-h2{
-    color:#eaf1f5;
-    font-size:20px;
-    font-weight: 500;
-}
-.login{
-    padding-top:70px;
-    padding-left:40px;
-}
-.login button{
-    margin-top:40px;
-}
-.login p{
-    margin-top:30px;
-}
-.tab_active{
-    color:#365262!important;
-    text-decoration: underline!important;
-}
-.users h1{
-    margin-bottom:20px;
-}
-.users__card{
-    margin-top:40px;
-    border:1px solid #365262;
-    padding:20px;
-}
-.users__card p{
-    margin-bottom: 10px;
-}
-.new-user__form{
-    margin-top:40px;
-   
-}
-.new-user__form-group{
-    margin-top:10px;
-    padding:10px;
-}
-.new-user__form-group input{
-    margin-left:20px;
-    padding:10px 10px;
-}
-.new-user__form-group button{
-    padding:10px;
-}
-
-.form-row{
-    display: flex;
-    margin-top:40px;
-    align-items: flex-end;
-    margin-bottom:40px;
-}
-.dynamic-form button {
-   padding:10px 10px;
-   max-height: 40px;
-}
-.input-group{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-right:10px;
-
-}
-
-.input-group input{     
-      padding:10px 10px;
-      margin-top:10px;
-      
-}
-.form-row button {
-   padding:10px 10px;
-   max-height: 40px;
-}
-
-.row-section{
-    margin-top:40px;
-}
-.row-section  h3{
-    color:#365262;
-    margin-top:30px;
-}
-.row-section__inner{
-    border:1px solid grey;
-    padding:20px;
-    margin-bottom:20px;
-}
-.row-section .form-row{
-    margin-top:25px;
-}
-.row-section .btn-primary{
-    margin-top:20px;
-}
-.btn-primary{
-    background-color:#365262;
-    color:white;
 }
 
 

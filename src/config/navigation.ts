@@ -6,32 +6,21 @@ export const navigationItems = {
       text: 'dashboard',
       
     },
+   // {
+     //// name: 'User Module ',
+     // to: '/Usermodule', 
+     // text:'Usermodule'
+    //},
     {
-      name: 'Repair Form ',
+      name: 'Company module',
+      to: '/Companymodule', 
+      text:'Companymodule'
+    },
+    {
+      name: 'Settings ',
       to: '/settings', 
       text:'settings'
-     
     },
-   // {
-     // name: 'Pending Repairs ',
-      //to: '/tabs', 
-      //text:'tabsdemo'
-   // },
-    // {
-      // name: 'Dynamic Form ',
-      // to: '/dynamic-form', 
-      // text:'dynamicform'
-    // },
-    //{
-      //name: 'Repair Delivered History',
-      //to: '/example', 
-      //text:'example'
-   // },
-    //{
-    // name: 'Repair Sets',
-     // to: '/users', 
-     // text:'users'
-   // },
    
   ], 
   footer: [], 
